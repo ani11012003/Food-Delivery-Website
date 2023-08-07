@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    /*    position: relative;*/
+    padding: 15px 25px;
+    background-color: orange;
+    opacity: 1;
+    width: 96vw;
+    height: 130px;
+}
+
+#head {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    align-self: center;
+    color: purple;
+}
+
+#logo_and_head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo1 {
+    height: 10vh;
+    width: 6vw;
+    border: 2px solid black;
+    border-radius: 4vh;
+    align-self: flex-end;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    display: block;
+    /*if we want to give the anchor tg padding we should set display as block as it is initial a inline element*/
+    padding: 4px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 730px;
+}
+
+#home:before {
+    content: " ";
+    background: url(food_website/bg_img2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: -200px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.btn {
+    padding: 6px 20px;
+    background-color: yellow;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: yellow;
+}
+
+.h-primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.6rem;
+    padding: 12px;
+    margin-top: -110px;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+.h-secondary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    padding: 12px;
+    align-self: center;
+    font-weight: bolder;
+}
+
+#services {
+    margin: 28px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#services .box {
+    border: 3px solid blueviolet;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 3px 5px 3px 10px yellowgreen;
+    border-radius: 25px;
+    background-color: aliceblue;
+}
+
+#services .box img {
+    height: 100px;
+    align-self: center;
+}
+
+#services .box p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#services-Head {
+    background-color: antiquewhite;
+}
+
+#services-Head h1 {
+    text-align: center;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.images {
+    width: 12%;
+    margin: 20px 20px;
+}
+
+#heading2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Our-clients {
+    position: relative;
+}
+
+#Our-clients:before {
+    content: "";
+    position: absolute;
+    background: url("food_website/bg_img3.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#heading3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact {
+    position: relative;
+    height: 700px;
+}
+
+#contact:before {
+    content: "";
+    position: absolute;
+    background: url("food_website/contactus.jpg") no-repeat center;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    font-size: 18px;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+#submit {
+    margin: 50px;
+    border: 2px solid green;
+    border-radius: 2px;
+    background-color: yellow;
+    color: black;
+}
+
+#submit:hover {
+    background-color: orange;
+    color: green;
+    cursor: pointer;
+}
+
+#contact-details {
+    text-align: center;
+    padding: 30px;
+    background-color: lightyellow;
+    height: 80px;
+}
